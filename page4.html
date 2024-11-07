@@ -14,13 +14,19 @@
       <a href="page3.html" class="btn btn-primary" style="background-color: #7B68EE">Page 3</a>
       <a href="page4.html" class="btn btn-primary" style="background-color: #7B68EE">Page 4</a>
     </div>
+
+    <br><br>
+    <button id="notifyButton" class="btn btn-success">Grant Access</button>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRNq5a2eFvC6vcFjERWzq1gFf5SnVqT35A5AA3URp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/notifyjs-browser/dist/notify.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script>
       $(document).ready(function() {
-        $.notify("Access granted", "success");
+        $('#notifyButton').click(function() {
+          $.notify("Access granted", "success");
+        });
       });
     </script>
   </body>
