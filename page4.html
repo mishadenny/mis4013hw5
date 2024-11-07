@@ -8,23 +8,26 @@
   </head>
   <body class="bg-secondary-subtle">
     <h1>Homework 6 Page 4</h1>
-      <div class="btn-group">
-  <a href="index.html" class="btn btn-primary" style="background-color: #7B68EE">Home</a>
-  <a href="page2.html" class="btn btn-primary" style="background-color: #7B68EE">Page 2</a>
-  <a href="page3.html" class="btn btn-primary" style="background-color: #7B68EE">Page 3</a>
-  <a href="page4.html" class="btn btn-primary" style="background-color: #7B68EE">Page 4</a>
-  </div>
+    <div class="btn-group">
+      <a href="index.html" class="btn btn-primary" style="background-color: #7B68EE">Home</a>
+      <a href="page2.html" class="btn btn-primary" style="background-color: #7B68EE">Page 2</a>
+      <a href="page3.html" class="btn btn-primary" style="background-color: #7B68EE">Page 3</a>
+      <a href="page4.html" class="btn btn-primary" style="background-color: #7B68EE">Page 4</a>
+    </div>
+    <div id="notification" class="alert alert-success mt-4" role="alert" style="display: none;">
+      <h4 class="alert-heading">Access Granted</h4>
+      <p>Your access to the system has been successfully granted. Welcome!</p>
+    </div>
 
- <h1>JavaScript Dates</h1>
-<h2>Using new Date()</h2>
-<p>new Date() without arguments, creates a date object with the current date and time:</p>
+    <script>
+      // Function to display the access granted notification
+      function displayAccessGranted() {
+        document.getElementById("notification").style.display = "block";
+      }
 
-<p id="demo"></p>
-
-<script>
-const d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
+      // Trigger the notification display
+      displayAccessGranted();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
