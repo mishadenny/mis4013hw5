@@ -24,7 +24,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
-      // Define the data object first
       const data = {
         labels: [
           'Red',
@@ -45,15 +44,12 @@
           ]
         }]
       };
-
-      // Create the chart with the config
       const config = {
         type: 'polarArea',
         data: data,
         options: {}
       };
 
-      // Render the chart
       const myChart = new Chart(
         document.getElementById('myChart'),
         config
